@@ -1,5 +1,5 @@
 import InputField from "./InputField.jsx";
-export default function InputComponent(){
+export default function InputComponent({InputHandler}){
     function handleInputChange(event){
         const input = Number(event.target.value);
         if(input) {
@@ -7,7 +7,7 @@ export default function InputComponent(){
                 .split(' ')
             label[0] = label[0].toLowerCase();
             label = label.join('')
-            console.log(label, input);
+            InputHandler({label:label, value:input})
         }
     }
     return(

@@ -1,17 +1,16 @@
 export default function ResultsComponent(){
     return(
-        <table>
-            <tbody>
+        <table id="result">
+            <thead>
             <tr>
-                <thead>Year</thead>
-                <thead>Investment Value</thead>
-                <thead>Interest (Year)</thead>
-                <thead>Total Interest</thead>
-                <thead>Invested Capital</thead>
+                <th>Year</th>
+                <th>Investment Value</th>
+                <th>Interest (Year)</th>
+                <th>Total Interest</th>
+                <th>Invested Capital</th>
             </tr>
-            </tbody>
 
-
+            </thead>
         </table>
     )
 }
