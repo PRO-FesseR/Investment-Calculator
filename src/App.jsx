@@ -18,7 +18,7 @@ function App() {
   }
   return (<>
       <InputComponent InputHandler={handleInput}/>
-    {investment.duration && <ResultsComponent userData={investment}/>}
+    {investment.duration ? <ResultsComponent userData={investment}/>: ''}
   </>)
 }
 

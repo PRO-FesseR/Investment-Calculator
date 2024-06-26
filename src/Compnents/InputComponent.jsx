@@ -2,7 +2,7 @@ import InputField from "./InputField.jsx";
 export default function InputComponent({InputHandler}){
     function handleInputChange(event){
         const input = Number(event.target.value);
-        if(input) {
+        if(!isNaN(input)) {
             let label = event.target.closest("label").textContent
                 .split(' ')
             label[0] = label[0].toLowerCase();
