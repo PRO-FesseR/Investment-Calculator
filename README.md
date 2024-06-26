@@ -30,30 +30,6 @@ To set up and run this project locally, follow these steps:
     ```
 5. Open your browser and go to `http://localhost:3000` to see the application in action.
 
-investment-calculator/
-│
-├── public/
-│ ├── investment-calculator-logo.png
-│ ├── index.html
-│ └── ...
-│
-├── src/
-│ ├── components/
-│ │ ├── InputComponent.jsx
-│ │ ├── InputField.jsx
-│ │ ├── ResultsComponent.jsx
-│ │ └── TableBodyRow.jsx
-│ ├── util/
-│ │ ├── investment.js
-│ │ └── ...
-│ ├── App.jsx
-│ ├── index.jsx
-│ └── ...
-│
-├── package.json
-├── README.md
-└── ...
-
 
 If you want to then feel free to contribute to this project,
 
