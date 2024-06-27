@@ -1,9 +1,9 @@
 import InputField from "./InputField.jsx";
 export default function InputComponent({InputHandler}){
     function handleInputChange(event){
-        const input = Number(event.target.value);
+        const input = +event.target.value;
         if(!isNaN(input)) {
-            let label = event.target.closest("label").textContent
+            let label = event.target.closest("p").children[0].textContent
                 .split(' ')
             label[0] = label[0].toLowerCase();
             label = label.join('')

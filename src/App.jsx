@@ -8,6 +8,7 @@ function App() {
     expectedReturn:0,
     duration:0
   })
+
   function handleInput(investment){
     setInvestment(prevInvest=> {
       return{
@@ -18,8 +19,12 @@ function App() {
   }
   return (<>
       <InputComponent InputHandler={handleInput}/>
-    {investment.duration ? <ResultsComponent userData={investment}/>: ''}
-  </>)
+    {investment.duration > 0 ?
+        <ResultsComponent userData={investment}/>:
+        investment.duration < 0?
+        <h2 className="center">The duration should be a positive number</h2>:''}
+    </>
+    )
 }
 
 export default App
