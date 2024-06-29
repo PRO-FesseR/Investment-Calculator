@@ -33,5 +33,3 @@ To set up and run this project locally, follow these steps:
 
 If you want to then feel free to contribute to this project,
 
-Acknowledgments
-This project was Created with React App.
